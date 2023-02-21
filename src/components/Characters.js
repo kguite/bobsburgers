@@ -26,7 +26,7 @@ function Characters(){
             <CharacterCard 
                 image={Tina}
                 name="Tina Belcher"
-                desc="Bob is the eldest"/>
+                desc="Tina is the eldest"/>
             <CharacterCard 
                 image={Gene}
                 name="Gene Belcher"
