@@ -39,10 +39,9 @@ function Characters(){
 
 
     return (
-        
+        <>
+        <h2 className="characters--title">The Belcher Family</h2>
         <div className="characters" id="characters">
-            <h2 className="characters--title">The Belcher Family</h2>
-            
             {characters.map((character) =>{
                 return (
                     <CharacterCard 
@@ -52,6 +51,7 @@ function Characters(){
                     />
                 );})}
         </div>
+    </>
     );
 }
 

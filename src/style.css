@@ -73,29 +73,23 @@ ul {
 }
 
 
-
-
-@media (min-width: 1250px) {
-    body {
-        margin: 0 auto;
-    }
-  }
   
 
  /* CHARACTERS  ____________________________________________________________________________________________ */
 
- .character-cards { 
+ .characters { 
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .characters--title {
     font-size: 3em;
 }
+
 
 .character-card {
     flex-direction: column;
@@ -106,8 +100,15 @@ ul {
     padding-bottom: 20px;
     background-color: white;
     justify-content: space-evenly;
-    max-width: 240px;
+    width: 200px;
+
 }
+
+@media (min-width: 1250px) {
+    .character-card {
+        max-width: 15%;
+    }
+  }
 
 .character--image {
     max-width: 100%;
@@ -128,6 +129,8 @@ ul {
     display: flex;
     text-align: center;
     padding: 12px;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .info-group > img {
@@ -141,44 +144,7 @@ ul {
     color: #2B283A;
 }
 
-
-/* FORM __________________________________________*/
-
-.form {
-    display: grid;
-    grid-template: 40px  / 1fr;
-    gap: 17px;
-    max-width: 70%;
-    margin: 0 auto;
-    font-size: 16px;
-    padding: 1em;
-}
-
-.form--input {
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    border: 1px solid #D5D4D8;
-    text-align: center;
-    padding: 10px;
-}
-
-.form--button {
-    grid-column: 1 / -1;
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-    margin: 0 auto;
-    padding: 15px;
-    font-weight: 600;
-}
-
-
-
-  /* BURGER OF THE DAY CHALKBOARD _______________________ */
+/* BURGER OF THE DAY CHALKBOARD _______________________ */
 
   .burgerOfTheDay {
     height: 1600px;
