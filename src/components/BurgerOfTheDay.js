@@ -1,6 +1,4 @@
 import React from "react";
-import Axios from "axios";
-import Burger from "./Burger.js";
 import burgerData from "./burgerData"
 import chalkboardBlank from "../../src/images/chalkboardBlank.png";
 
@@ -10,7 +8,7 @@ function BurgerOfTheDay(){
     const [burger, setBurger] = React.useState("")
     const [burgerPrice, setBurgerPrice] = React.useState("")
 
-  //   https://bobsburgers-api.herokuapp.com/burgerOfTheDay/ for later, for now the info is copy/pasted into burgerData.js
+  //   https://bobsburgers-api.herokuapp.com/burgerOfTheDay/ for later, for now the data is copy/pasted into burgerData.js
 
     function getBurgerOfTheDay() {
         const burgerArray = burgerData.data.burgers
@@ -31,7 +29,7 @@ function BurgerOfTheDay(){
                 <div className="chalkboard--image--button" onClick={getBurgerOfTheDay} style={{ backgroundImage: `url(${chalkboardBlank})` }}>
                 <div className="chalkboard--text">
                     <p className="burger--text">{burger}</p>
-                    <p className="burger--price">{burgerPrice}</p>
+                    <span className="burger--price">{burgerPrice}</span>
                 </div>
                 </div>
 
