@@ -17,24 +17,25 @@ function Characters(){
             <CharacterCard 
                 image={Bob}
                 name="Bob Belcher"
-                desc="Bob is the Dad"
+                desc="Would kiss Thanksgiving."
                 />
             <CharacterCard 
                 image={Linda}
                 name="Linda Belcher"
-                desc="Linda is the Mom"/>
+                desc="Linda doesn't get drunk, she just has fun."
+                />
             <CharacterCard 
                 image={Tina}
                 name="Tina Belcher"
-                desc="Tina is the eldest"/>
+                desc="A smart, strong, sensual woman."/>
             <CharacterCard 
                 image={Gene}
                 name="Gene Belcher"
-                desc="Gene is the middle"/>
+                desc="Leader of the Itty Bitty Ditty Committee."/>
             <CharacterCard 
                 image={Louise}
                 name="Louise Belcher"
-                desc="Louise is the youngest"/>
+                desc="Not into Boyz 4 Now."/>
         </div>
     )
 }
