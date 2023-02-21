@@ -14,6 +14,8 @@ function Characters(){
 
     return (
         <div className="characters" id="characters">
+            <h2 className="characters--title">The Belcher Family</h2>
+            <div className="character-cards">
             <CharacterCard 
                 image={Bob}
                 name="Bob Belcher"
@@ -36,6 +38,7 @@ function Characters(){
                 image={Louise}
                 name="Louise Belcher"
                 desc="Not into Boyz 4 Now."/>
+            </div>
         </div>
     )
 }

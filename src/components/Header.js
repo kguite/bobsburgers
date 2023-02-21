@@ -14,9 +14,11 @@ function Header() {
                         (for now, it's in a file called burgerData.js)</li>
                         <li>A form where you can create your own Burger of the Day</li>
                         <li>A proper footer</li>
+                        <li>Refactoring the CSS into SASS</li>
                         <li>Lots more REACT practice and features</li>
                     </ul>
                     <p>Thanks for visiting my practice project!</p>
+                    <p><a href="https://github.com/kguite/bobsburgers">Github</a></p>
             </div>
         </header>
 
