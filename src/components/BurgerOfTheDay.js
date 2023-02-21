@@ -1,44 +1,49 @@
 import React from "react";
-import burgerData from "./burgerData"
 import chalkboardBlank from "../../src/images/chalkboardBlank.png";
 
 
 function BurgerOfTheDay(){
 
     const [burger, setBurger] = React.useState("")
-    const [burgerPrice, setBurgerPrice] = React.useState("")
 
-  //   https://bobsburgers-api.herokuapp.com/burgerOfTheDay/ for later, for now the data is copy/pasted into burgerData.js
+// gets random burger from burgerData.js
+    // function getBurgerOfTheDay() {
+    //     const burgerArray = burgerData.data.burgers
+    //     const randomBurger = Math.floor(Math.random() * burgerArray.length) 
+    //     setBurger(burgerArray[randomBurger].name)
+    // }
 
-    function getBurgerOfTheDay() {
-        const burgerArray = burgerData.data.burgers
-        const randomBurger = Math.floor(Math.random() * burgerArray.length) 
-        // const burgerName = burgerArray[randomBurger].name
-        // const burgerPrice = burgerArray[randomBurger].price
-        
-        setBurger(burgerArray[randomBurger].name)
-        setBurgerPrice(burgerArray[randomBurger].price)
+
+// fetches random burger from Bobs Burgers API https://bobsburgers-api.herokuapp.com/burgerOfTheDay/ 
+    function fetchBurgerOfTheDay() {
+        const randomBurger = Math.floor(Math.random() * 333 + 1 ) 
+
+        fetch(`https://bobsburgers-api.herokuapp.com/burgerOfTheDay/${randomBurger}`)
+            .then(res => res.json()) // parse response as JSON
+            .then(data => {
+            console.log(data)
+
+        document.querySelector('#burger').innerText = data.name;
+
+      })
+      .catch(err => {
+          console.log(`error ${err}`)
+      });
     }
-
 
     return (
         <div className="burgerOfTheDay">
-            <h2 className="burgerOfTheDay--title">Burger Of The Day</h2>
+            <h2 className="burgerOfTheDay--title" id="burgerOfTheDay">Burger Of The Day</h2>
+            <h3>Click the chalkboard to retrieve a random Burger of the Day</h3>
+            <p>Burgers are pulled from <a href="https://www.bobsburgersapi.com">Bob's Burgers API</a></p>
 
             <div className="chalkboard" id="chalkboard">
-                <div className="chalkboard--image--button" onClick={getBurgerOfTheDay} style={{ backgroundImage: `url(${chalkboardBlank})` }}>
+                <div className="chalkboard--image--button" onClick={fetchBurgerOfTheDay} style={{ backgroundImage: `url(${chalkboardBlank})` }}>
                 <div className="chalkboard--text">
-                    <p className="burger--text">{burger}</p>
-                    <span className="burger--price">{burgerPrice}</span>
-                </div>
-                </div>
-
-                <div>
-                    <button onClick={getBurgerOfTheDay} className="burger--button">
-                    🍔 Get Random Burger 🍔
-                    </button>   
+                    <p className="burger--text" id="burger">{burger}</p>
                 </div>
             </div>
+        </div>
         </div>
 
     )

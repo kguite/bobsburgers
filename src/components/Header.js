@@ -9,9 +9,13 @@ function Header() {
             <img src={bobsBurgersName} alt="Bob's Burgers" className="header--img" />
             <div className="header--text">
                 <p>This Bob's Burgers site was built from scratch using React.</p>
-                    <ul><strong>Future additions will include:</strong>
-                        <li>Burger of the Day info pulled from the API <br />
-                        (for now, it's in a file called burgerData.js)</li>
+
+                    <ul><strong>Current Features:</strong>
+                        <li>Burger of the Day info pulled from <a href="https://www.bobsburgersapi.com">Bob's Burgers API</a></li>
+                        <li></li>
+                    </ul>
+
+                    <ul><strong>Future additions:</strong>
                         <li>A form where you can create your own Burger of the Day</li>
                         <li>A proper footer</li>
                         <li>Refactoring the CSS into SASS</li>
