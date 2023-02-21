@@ -6,7 +6,7 @@ function BurgerOfTheDay(){
 
     const [burger, setBurger] = React.useState("")
 
-// gets random burger from burgerData.js
+// gets random burger from burgerData.js - changed to use the API instead.
     // function getBurgerOfTheDay() {
     //     const burgerArray = burgerData.data.burgers
     //     const randomBurger = Math.floor(Math.random() * burgerArray.length) 
