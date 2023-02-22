@@ -12,7 +12,7 @@ function Header() {
 
                     <ul className="header--ul"><strong>Current Features:</strong>
                         <li><strong>- Characters</strong> are stored in an array, and the map function is used to iterate through them and display them using a CharacterCard component. </li>
-                        <li><strong>- Burger of the Day</strong> info is pulled from the <a href="https://www.bobsburgersapi.com">Bob's Burgers API</a> with a Math.Random() function used to randomize the result.</li>
+                        <li><strong>- Burger of the Day</strong> info is pulled from the <a href="https://www.bobsburgersapi.com" aria-label="Learn more about the Bob's Burgers API">Bob's Burgers API</a> with a Math.Random() function used to randomize the result.</li>
                         <li><strong>- Quiz</strong> utilizes useState and useEffect.</li>
                     </ul>
 
@@ -22,7 +22,7 @@ function Header() {
                         <li>- Prettier styling.</li>
                     </ul>
                     <p>Thanks for visiting my practice project!</p>
-                    <p><a href="https://github.com/kguite/bobsburgers">View the GitHub</a></p>
+                    <p><a href="https://github.com/kguite/bobsburgers" aria-label="View the code at GitHub">View the GitHub</a></p>
             </div>
         </header>
 
