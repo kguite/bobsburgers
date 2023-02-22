@@ -106,20 +106,18 @@ ul {
     padding-bottom: 20px;
     background-color: white;
     justify-content: space-evenly;
-    width: 200px;
 
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 600px) {
     .character-card {
-        max-width: 15%;
+        max-width: 12%;
     }
   }
 
 .character--image {
     max-width: 100%;
-    max-height: 600px;
-    height: auto;
+    height: 50%;
     align-self: center;
     border-radius: 5px;
     object-fit: contain;
@@ -139,16 +137,6 @@ ul {
     margin: 0 auto;
 }
 
-.info-group > img {
-    height: 11px;
-    margin-right: 8px;
-}
-
-.info-group > p {
-    margin-block: 3px;
-    font-size: 12px;
-    color: #2B283A;
-}
 
 /* BURGER OF THE DAY CHALKBOARD _______________________ */
 
