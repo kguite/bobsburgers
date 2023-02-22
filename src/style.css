@@ -8,6 +8,11 @@
 
 }
 
+
+.App {
+    height: 100vh;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -34,6 +39,7 @@ body {
 .nav-items {
     display: flex;
     justify-items: flex-end;
+    padding-right: 20px;
 }
 
 .nav-items > li  {
@@ -147,7 +153,7 @@ ul {
 /* BURGER OF THE DAY CHALKBOARD _______________________ */
 
   .burgerOfTheDay {
-    height: 1600px;
+    height: 800px;
   }
 
   .chalkboard {
@@ -155,7 +161,6 @@ ul {
     background-position: center; 
     background-repeat: no-repeat;
     width: 500px;
-    height: 2000px;
     margin: 0 auto;
   }
 
@@ -205,4 +210,52 @@ ul {
     padding: 15px;
     border-radius: 5px;
     border: none;
+}
+
+
+/* QUIZ GAME _______________________ */
+
+.quiz {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: lightgray;
+
+}
+
+.quiz--question-card{
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 24px;
+    background-color: white;
+}
+.question--text {
+    text-align: center;
+    padding: 24px;
+}
+
+.quiz--options {
+    border: 3px solid rgb(31, 31, 123);
+    background-color:rgb(206, 206, 253);
+    border-radius: 5px;
+    padding: 12px;
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+/* FOOTER _______________________ */
+
+.footer {
+    margin-top: 24px;
+    background-color: lightgray;
+}
+
+.footer--text {
+    padding: 24px;
+    line-height: 1.5em;
 }
