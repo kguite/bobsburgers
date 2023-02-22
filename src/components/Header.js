@@ -22,7 +22,7 @@ function Header() {
                         <li>Prettier styling</li>
                     </ul>
                     <p>Thanks for visiting my practice project!</p>
-                    <p><a href="https://github.com/kguite/bobsburgers"></a>View the Github</p>
+                    <p><a href="https://github.com/kguite/bobsburgers">View the GitHub</a></p>
             </div>
         </header>
 
