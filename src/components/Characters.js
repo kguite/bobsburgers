@@ -32,7 +32,7 @@ function Characters(){
         },
         {
             image:Louise,
-            name:"Gene Belcher",
+            name:"Louise Belcher",
             desc:"Totally not into Boyz 4 Now."
         },
     ]
