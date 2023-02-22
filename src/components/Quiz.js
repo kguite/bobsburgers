@@ -31,7 +31,8 @@ function Quiz() {
     };
   
     return (
-
+      <>
+      <h2 className="quiz--title">Quiz</h2>
       <div className="quiz" id="quiz">
         <h1>Test Your Bob's Burgers Knowledge!</h1>
         <h2>Score: {score}</h2>
@@ -62,6 +63,7 @@ function Quiz() {
           </div>
         )}
       </div>
+      </>
     );
   }
 

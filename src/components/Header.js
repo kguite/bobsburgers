@@ -8,18 +8,18 @@ function Header() {
         <header className="header">
             <img src={bobsBurgersName} alt="Bob's Burgers" className="header--img" />
             <div className="header--text">
-                <p>This Bob's Burgers site was built from scratch using React.</p>
+                <h2 className="header--subtitle">This site was built from scratch using React.</h2>
 
-                    <ul><strong>Current Features:</strong>
-                        <li>Character cards are pulled through a map function.</li>
-                        <li>Burger of the Day info pulled from <a href="https://www.bobsburgersapi.com">Bob's Burgers API.</a></li>
-                        <li>Quiz app utilizes useState and useEffect</li>
+                    <ul className="header--ul"><strong>Current Features:</strong>
+                        <li><strong>- Characters</strong> are stored in an array, and the map function is used to iterate through them and display them using a CharacterCard component. </li>
+                        <li><strong>- Burger of the Day</strong> info is pulled from the <a href="https://www.bobsburgersapi.com">Bob's Burgers API</a> with a Math.Random() function used to randomize the result.</li>
+                        <li><strong>- Quiz</strong> utilizes useState and useEffect</li>
                     </ul>
 
-                    <ul><strong>Future additions:</strong>
-                        <li>A form where you can create your own Burger of the Day</li>
-                        <li>Refactoring the CSS into SASS</li>
-                        <li>Prettier styling</li>
+                    <ul className="header--ul"><strong>Future additions:</strong>
+                        <li>- A form to create your own Burger of the Day</li>
+                        <li>- Refactoring the CSS into SASS</li>
+                        <li>- Prettier styling</li>
                     </ul>
                     <p>Thanks for visiting my practice project!</p>
                     <p><a href="https://github.com/kguite/bobsburgers">View the GitHub</a></p>

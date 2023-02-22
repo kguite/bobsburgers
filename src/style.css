@@ -31,9 +31,11 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 24px;
 }
 .nav-logo {
-    padding: 0.5em;
+    padding: 1em;
     width: 70px; 
 }
 .nav-items {
@@ -74,8 +76,12 @@ body {
     margin: 0 auto;
 }
     
-ul {
+.header--ul {
     list-style: none;
+    max-width: 50%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    padding-bottom: 24px;
 }
 
 
@@ -211,7 +217,10 @@ ul {
     margin: 0 auto;
     padding: 24px;
     background-color: lightgray;
+}
 
+.quiz--title {
+    font-size: 3em;
 }
 
 .quiz--question-card{
@@ -259,6 +268,7 @@ ul {
 .footer {
     margin-top: 24px;
     background-color: lightgray;
+    border-top: 1px solid darkgray;
 }
 
 .footer--text {
