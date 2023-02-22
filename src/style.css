@@ -248,6 +248,18 @@ ul {
     margin-bottom: 12px;
 }
 
+.restart-button {
+    border: 3px solid rgb(17, 78, 49);
+    background-color:rgb(152, 219, 187);
+    border-radius: 5px;
+    padding: 12px;
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-size: 18px;
+
+}
 /* FOOTER _______________________ */
 
 .footer {

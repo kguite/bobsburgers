@@ -37,10 +37,9 @@ function Quiz() {
         <h2>Score: {score}</h2>
           {showResults ? (
           <div className="quiz--finalResults">
-              <h1>Final Results</h1>
               <h2>{score} out of {questions.length} correct - (
               {(score / questions.length) * 100}%)</h2>
-              <button onClick={() => restartQuiz()}>Restart Quiz</button>
+              <button className="restart-button" onClick={() => restartQuiz()}>Restart Quiz</button>
           </div>
 
         ) : (
