@@ -237,15 +237,20 @@ ul {
     padding: 24px;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0 !important;
+}
 .quiz--options {
     border: 3px solid rgb(31, 31, 123);
     background-color:rgb(206, 206, 253);
     border-radius: 5px;
     padding: 12px;
-    width: 25%;
+    min-width: 25%;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 12px;
+    align-items: center;
 }
 
 .restart-button {
