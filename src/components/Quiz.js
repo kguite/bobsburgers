@@ -32,7 +32,7 @@ function Quiz() {
   
     return (
 
-      <div className="quiz">
+      <div className="quiz" id="quiz">
         <h1>Test Your Bob's Burgers Knowledge!</h1>
         <h2>Score: {score}</h2>
           {showResults ? (
